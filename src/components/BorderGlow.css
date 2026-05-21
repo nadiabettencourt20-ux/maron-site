@@ -1,0 +1,57 @@
+.border-glow-card {
+  --edge-proximity: 0;
+  --cursor-angle: 45deg;
+
+  position: relative;
+  border-radius: var(--border-radius);
+  background: transparent;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.border-glow-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 1;
+
+  background: conic-gradient(
+    from var(--cursor-angle),
+    transparent 0deg,
+    rgba(255, 179, 138, 0.95) 70deg,
+    rgba(255, 138, 91, 0.95) 130deg,
+    rgba(255, 209, 184, 0.95) 190deg,
+    transparent 270deg
+  );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+
+  mask-composite: exclude;
+}
+
+.border-glow-card:hover::before {
+  opacity: 1;
+}
+
+.edge-light {
+  display: none;
+}
+
+.border-glow-inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
