@@ -16,7 +16,7 @@ const socialLinks = [
   {
     node: <FaWhatsapp />,
     title: "WhatsApp",
-    href: "https://wa.me/244923567059",
+    href: "https://wa.me/244934371373",
   },
   {
     node: <FaInstagram />,
@@ -26,7 +26,7 @@ const socialLinks = [
   {
     node: <FaWhatsapp />,
     title: "WhatsApp",
-    href: "https://wa.me/244923567059",
+    href: "https://wa.me/244934371373",
   },
 ];
 
@@ -53,7 +53,7 @@ function App() {
 
           <a
             className="nav-btn"
-            href="https://wa.me/244923567059"
+            href="https://wa.me/244934371373"
             target="_blank"
           >
             WhatsApp
@@ -82,7 +82,7 @@ function App() {
               </p>
 
               <div className="actions">
-                <a href="https://wa.me/244923567059" target="_blank">
+                <a href="https://wa.me/244934371373" target="_blank">
                   Fazer pedido
                 </a>
 
@@ -275,7 +275,7 @@ function App() {
               />
             </div>
 
-            <a href="https://wa.me/244923567059" target="_blank">
+            <a href="https://wa.me/244934371373" target="_blank">
               Pedir pelo WhatsApp
             </a>
           </section>
@@ -308,7 +308,7 @@ function App() {
                 duration={1.4}
               />
 
-              <p>WhatsApp: +244 923 567 059</p>
+              <p>WhatsApp: +244 934 371 373</p>
               <p>Email: marionbolosdesonho@gmail.com</p>
             </div>
 
